@@ -2,6 +2,14 @@
 
 This project provides a web interface for controlling a 4-channel relay module connected to a Raspberry Pi. The web interface is built using Flask, a Python web framework, and allows users to turn each relay on or off individually, as well as turn all relays on or off at once.
 
+<br>
+<p align="center">
+  <img src="images/control_web_ui.png" />
+</p>
+
+
+
+
 ##### Requirements
 Python 3 installed
 Flask module for Python installed
