@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IOT Relay Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+        margin-top: 20px;
+      }
+
+      table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      button {
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IOT Relay Control</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <form action="/6" method="POST">
+              <button id="6">Turn All ON</button>
+            </form>
+          </td>
+          <td>
+            <form action="/5" method="POST">
+              <button id="5">Turn All OFF</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/1" method="POST">
+              <button id="1">Relay 1</button>
+            </form>
+          </td>
+          <td>
+            <form action="/10" method="POST">
+              <button id="10">OFF</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/2" method="POST">
+              <button id="2">Relay 2</button>
+            </form>
+          </td>
+          <td>
+            <form action="/20" method="POST">
+              <button id="20">OFF</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/3" method="POST">
+              <button id="3">Relay 3</button>
+            </form>
+          </td>
+          <td>
+            <form action="/30" method="POST">
+              <button id="30">OFF</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/4" method="POST">
+              <button id="4">Relay 4</button>
+            </form>
+          </td>
+          <td>
+            <form action="/40" method="POST">
+              <button id="40">OFF</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
